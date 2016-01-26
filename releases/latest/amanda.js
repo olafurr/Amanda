@@ -345,6 +345,9 @@ var isUndefined = function(input) {
  * @param {object} obj
  */
 var keys = function(obj) {
+if (!obj){
+	return []
+};
   return Object.keys(obj);
 };
 
